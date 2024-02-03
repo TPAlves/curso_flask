@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+</head>
+<body>
+<h1>Boletim Bolado</h1>
+<form action="http://127.0.0.1:5000/calculo" method="post">
+    {% for i in range(4) %}
+        <p>
+            <input type="number" name="nota{{i}}" id="nota{{i}}" max="10" min="0">
+        </p>
+    {% endfor %}
+    <p>
+        <button type="submit">Enviar</button>
+    </p>
+
+</form>
+</body>
+</html>

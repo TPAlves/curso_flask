@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{# Comentario jinja2 #}
+<h1>Olá Jinja2</h1>
+<p>
+    {{ x + y }}
+</p>
+{% if x >= 50 %}
+<p>Opaa</p>
+{% else %}
+<p>Falsoooooooooo</p>
+{% endif %}
+
+<hr>
+
+
+
+<table>
+    {% for i, j in query.items()%}
+    <tr>
+        <th>{{ i }}</th>
+        <td>{{ j }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
